@@ -13,6 +13,8 @@
 		01DDD1B41F8C12D600FC12C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DDD1B21F8C12D600FC12C9 /* Main.storyboard */; };
 		01DDD1B61F8C12D600FC12C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DDD1B51F8C12D600FC12C9 /* Assets.xcassets */; };
 		01DDD1B91F8C12D600FC12C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DDD1B71F8C12D600FC12C9 /* LaunchScreen.storyboard */; };
+		01DDD1C21F8C181500FC12C9 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1C11F8C181500FC12C9 /* Player.m */; };
+		01DDD1C51F8C21A600FC12C9 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DDD1C41F8C21A600FC12C9 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		01DDD1B51F8C12D600FC12C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01DDD1B81F8C12D600FC12C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01DDD1BA1F8C12D600FC12C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DDD1C01F8C181500FC12C9 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		01DDD1C11F8C181500FC12C9 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		01DDD1C31F8C21A600FC12C9 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		01DDD1C41F8C21A600FC12C9 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,11 @@
 			children = (
 				01DDD1AC1F8C12D600FC12C9 /* AppDelegate.h */,
 				01DDD1AD1F8C12D600FC12C9 /* AppDelegate.m */,
+				01DDD1C01F8C181500FC12C9 /* Player.h */,
+				01DDD1C11F8C181500FC12C9 /* Player.m */,
 				01DDD1AF1F8C12D600FC12C9 /* ViewController.h */,
+				01DDD1C31F8C21A600FC12C9 /* ScoreKeeper.h */,
+				01DDD1C41F8C21A600FC12C9 /* ScoreKeeper.m */,
 				01DDD1B01F8C12D600FC12C9 /* ViewController.m */,
 				01DDD1B21F8C12D600FC12C9 /* Main.storyboard */,
 				01DDD1B51F8C12D600FC12C9 /* Assets.xcassets */,
@@ -151,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DDD1C51F8C21A600FC12C9 /* ScoreKeeper.m in Sources */,
+				01DDD1C21F8C181500FC12C9 /* Player.m in Sources */,
 				01DDD1B11F8C12D600FC12C9 /* ViewController.m in Sources */,
 				01DDD1AE1F8C12D600FC12C9 /* AppDelegate.m in Sources */,
 				01DDD1AB1F8C12D600FC12C9 /* main.m in Sources */,

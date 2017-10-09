@@ -9,6 +9,12 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *playerOneScore;
+@property (weak, nonatomic) IBOutlet UILabel *playerTwoScore;
+@property (weak, nonatomic) IBOutlet UILabel *gamePrompt;
+@property (weak, nonatomic) IBOutlet UILabel *mathQuestion;
+@property (weak, nonatomic) IBOutlet UILabel *playerInput;
+@property (weak, nonatomic) IBOutlet UILabel *playerAnswerCorrectness;
 
 @end
 
@@ -16,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"❤️");
     // Do any additional setup after loading the view, typically from a nib.
 }
 
