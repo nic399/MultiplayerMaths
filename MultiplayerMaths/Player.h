@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Question.h"
 
 @interface Player : NSObject
 
@@ -15,6 +16,8 @@
 @property (nonatomic, assign, readwrite) int score;
 
 -(instancetype)initWithName:(NSString *)name;
--(void)loseLife;
+-(BOOL)loseLife;
+-(void)increaseScore;
+
 
 @end

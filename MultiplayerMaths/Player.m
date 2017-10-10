@@ -20,8 +20,17 @@
     return self;
 }
 
+-(BOOL)loseLife{
+    self.lives--;
+    if (self.lives < 1) {
+        return true;
+    }
+    return false;
+}
 
-
+-(void)increaseScore {
+    self.score++;
+}
 
 
 
