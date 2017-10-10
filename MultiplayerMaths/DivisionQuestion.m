@@ -24,6 +24,7 @@
 
 -(NSString *)printQuestion {
     NSString *outputStr = [NSString stringWithFormat:@"%i / %i = ", self.leftVal, self.rightVal];
+    NSLog(@"%@", outputStr);
     return outputStr;
 }
 

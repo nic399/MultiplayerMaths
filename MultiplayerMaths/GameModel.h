@@ -12,6 +12,7 @@
 
 -(NSString *)getNextQuestion;
 -(BOOL)guessAnswer:(int)guess;
+-(NSString *)getCurrentPlayerName;
 
 
 @end

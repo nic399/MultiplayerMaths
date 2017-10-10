@@ -67,6 +67,10 @@
     }
 }
 
+-(NSString *)getCurrentPlayerName {
+    return [[self getCurrentPlayer] name];
+}
+
 
 
 

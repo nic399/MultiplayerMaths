@@ -14,15 +14,16 @@
     self = [super init];
     if (self)
     {
-        self.rightVal = arc4random_uniform(100);
-        self.leftVal = arc4random_uniform(100);
+        self.rightVal = arc4random_uniform(20)+1;
+        self.leftVal = arc4random_uniform(20)+1;
         startTime = [NSDate date];
     }
     return self;
 }
 
--(void) printQuestion {
+-(NSString *) printQuestion {
     NSLog(@"Error: printQuestion method must be overridden in all subclasses");
+    return nil;
 }
 
 -(BOOL) checkAnswer:(int)guess {
