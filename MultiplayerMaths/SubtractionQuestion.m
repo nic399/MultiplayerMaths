@@ -9,6 +9,17 @@
 #import "SubtractionQuestion.h"
 
 @implementation SubtractionQuestion
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+        if (self.rightVal > self.leftVal) {
+            int temp = self.rightVal;
+            self.rightVal = self.leftVal;
+            self.leftVal = temp;
+        }
+    }
+    return self;
+}
 
 -(NSString *)printQuestion{
     NSString *outputStr = [NSString stringWithFormat:@"%i - %i = ", self.leftVal, self.rightVal];

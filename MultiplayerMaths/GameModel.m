@@ -71,8 +71,14 @@
     return [[self getCurrentPlayer] name];
 }
 
+-(NSArray *)getScore {
+    return @[[NSNumber numberWithInt:self.player1.score], [NSNumber numberWithInt:self.player2.score]];
+}
 
+-(NSArray *)getLives {
+    return @[[NSNumber numberWithInt:self.player1.lives], [NSNumber numberWithInt:self.player2.lives]];
 
+}
 
 
 

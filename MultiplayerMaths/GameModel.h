@@ -13,6 +13,7 @@
 -(NSString *)getNextQuestion;
 -(BOOL)guessAnswer:(int)guess;
 -(NSString *)getCurrentPlayerName;
-
+-(NSArray *)getScore;
+-(NSArray *)getLives;
 
 @end
