@@ -77,7 +77,6 @@
 
 -(NSArray *)getLives {
     return @[[NSNumber numberWithInt:self.player1.lives], [NSNumber numberWithInt:self.player2.lives]];
-
 }
 
 

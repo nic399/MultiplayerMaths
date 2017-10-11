@@ -116,6 +116,20 @@
     self.playerTwoScore.text = [@"Player 2: " stringByAppendingString:[[scores objectAtIndex:1] stringValue]];
 }
 
+-(void)restartGame {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Game Over" message:@"Simple alertView demo with Cancel and OK." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
+        NSLog(@"Cancel");
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        NSLog(@"OK");
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated: YES completion: nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
