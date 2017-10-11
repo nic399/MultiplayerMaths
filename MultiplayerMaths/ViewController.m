@@ -49,7 +49,7 @@
     [self printScore];
     self.userInput.text = @"";
     if (self.gameOver) {
-        
+        [self restartGame];
     }
     else {
         self.gamePrompt.text = [[self.myGameModel getCurrentPlayerName] stringByAppendingString:@", you're up"];
@@ -117,13 +117,27 @@
 }
 
 -(void)restartGame {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Game Over" message:@"Simple alertView demo with Cancel and OK." preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
-        NSLog(@"Cancel");
-    }];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        NSLog(@"OK");
-    }];
+    NSString *msgStr = [[@"" stringByAppendingString:self.playerOneScore.text] stringByAppendingString:@"\n"];
+    msgStr = [msgStr stringByAppendingString:self.playerTwoScore.text];
+    NSLog(@"%@", msgStr);
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Game Over"
+                                                                             message:msgStr
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Yes"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * action) {
+                                                             NSLog(@"Yes");
+                                                             [self.myGameModel resetGame];
+                                                             self.gameOver = false;
+                                                             [self askQuestion];
+                                                         }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"No"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * action) {
+                                                         NSLog(@"No");
+                                                         exit(0);
+                                                     }];
     
     [alertController addAction:cancelAction];
     [alertController addAction:okAction];

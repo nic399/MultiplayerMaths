@@ -79,7 +79,13 @@
     return @[[NSNumber numberWithInt:self.player1.lives], [NSNumber numberWithInt:self.player2.lives]];
 }
 
-
+-(void)resetGame {
+    self.player1.lives = 3;
+    self.player1.score = 0;
+    self.player2.lives = 3;
+    self.player2.score = 0;
+    self.currentPlayer = 0;
+}
 
 
 @end

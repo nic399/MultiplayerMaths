@@ -15,5 +15,6 @@
 -(NSString *)getCurrentPlayerName;
 -(NSArray *)getScore;
 -(NSArray *)getLives;
+-(void)resetGame;
 
 @end
